@@ -63,11 +63,11 @@ typedef struct
  * A local helper (hook) function for the OS_printf stub provided by OSAL.
  * This confirms internal content of the format string and arguments.
  */
-static int32 UT_printf_hook(void *UserObj, int32 StubRetcode, uint32 CallCount, const UT_StubContext_t *Context,
-                            va_list va)
+static int32
+UT_printf_hook(void *UserObj, int32 StubRetcode, uint32 CallCount, const UT_StubContext_t *Context, va_list va)
 {
     SAMPLE_LIB_Function_TestState_t *State  = UserObj;
-    const char *                     string = UT_Hook_GetArgValueByName(Context, "string", const char *);
+    const char                      *string = UT_Hook_GetArgValueByName(Context, "string", const char *);
 
     /*
      * The OS_printf() stub passes format string as the argument
@@ -173,7 +173,9 @@ void Sample_UT_Setup(void)
 /*
  * Teardown function after every test
  */
-void Sample_UT_TearDown(void) {}
+void Sample_UT_TearDown(void)
+{
+}
 
 /*
  * Register the test cases to execute with the unit test tool
