@@ -26,17 +26,18 @@
 
 /* Development Build Macro Definitions */
 
-#define SAMPLE_LIB_BUILD_NUMBER     0 /*!< Development Build: Number of commits since baseline */
-#define SAMPLE_LIB_BUILD_BASELINE   "v7.0.0" /*!< Development Build: git tag that is the base for the current development */
-#define SAMPLE_LIB_BUILD_DEV_CYCLE  "v7.0.0" /**< @brief Development: Release name for current development cycle */
-#define SAMPLE_LIB_BUILD_CODENAME   "Draco" /**< @brief: Development: Code name for the current build */
+#define SAMPLE_LIB_BUILD_NUMBER 0 /*!< Development Build: Number of commits since baseline */
+#define SAMPLE_LIB_BUILD_BASELINE \
+    "v7.0.0" /*!< Development Build: git tag that is the base for the current development */
+#define SAMPLE_LIB_BUILD_DEV_CYCLE "v7.0.0" /**< @brief Development: Release name for current development cycle */
+#define SAMPLE_LIB_BUILD_CODENAME  "Draco"  /**< @brief: Development: Code name for the current build */
 
 /*
  * Version Macros, see \ref cfsversions for definitions.
  */
-#define SAMPLE_LIB_MAJOR_VERSION 7  /*!< @brief Major version number */
-#define SAMPLE_LIB_MINOR_VERSION 0  /*!< @brief Minor version number */
-#define SAMPLE_LIB_REVISION      0  /*!< @brief Revision version number. Value of 0 indicates a development version.*/
+#define SAMPLE_LIB_MAJOR_VERSION 7 /*!< @brief Major version number */
+#define SAMPLE_LIB_MINOR_VERSION 0 /*!< @brief Minor version number */
+#define SAMPLE_LIB_REVISION      0 /*!< @brief Revision version number. Value of 0 indicates a development version.*/
 
 /**
  * @brief Last official release.
@@ -71,9 +72,9 @@
 
 /**
  * @brief Max Version String length.
- * 
+ *
  * Maximum length that a sample_lib version string can be.
- * 
+ *
  */
 #define SAMPLE_LIB_CFG_MAX_VERSION_STR_LEN 256
 
